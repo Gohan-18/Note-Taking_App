@@ -27,7 +27,7 @@
     font-weight: 500;
     color: #7f8283;
     font-family: 'Poppins', sans-serif;
-    width: 300px;
+    width: 100%;
     margin-bottom: 20px;
     outline: none;
     padding: 5px;
@@ -37,6 +37,8 @@
 
 .content {
     flex: 1;
+    /* height: 250px; */
+    width: 100%;
     padding: 0 5px;
     overflow: auto;
     background: none;
