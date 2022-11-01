@@ -19,6 +19,7 @@
 
 .header {
     display: flex;
+    align-items: center;
     position: relative;
 }
 
@@ -31,14 +32,8 @@
 }
 
 .header-add-btn {
-    font-size: 20px;
     position: absolute;
-    color: #a8dadc;
-    font-weight: bold;
-    background: none;
-    height: 25px;
-    width: 25px;
-    border: 3px solid #a8dadc;
-    margin-left: 155px;
-    border-radius: 4px;
+    margin-left: 150px;
+    width: 1.5rem;
+    cursor: pointer;
 }

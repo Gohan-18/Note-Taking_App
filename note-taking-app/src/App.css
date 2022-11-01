@@ -3,3 +3,7 @@
   padding: none;
   box-sizing: border-box;
 }
+
+.App {
+  height: 95vh;
+}

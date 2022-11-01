@@ -1,12 +1,13 @@
 import Header from "./header"
-import NoteCard from "./NoteCard"
+import MainContainer from "./MainContainer"
+import './App.css'
 
 function App() {
 
   return (
     <div className="App">
       <Header />
-      <NoteCard />
+      <MainContainer />
     </div>
   )
 }
