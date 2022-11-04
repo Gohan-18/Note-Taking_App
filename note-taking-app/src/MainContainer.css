@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
+
 .MainContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;   
+    align-items: center;
     height: 90%;
     overflow: auto;
     margin-top: 10px;
@@ -12,6 +15,15 @@
     margin-left: 20px;
     margin-right: 20px;
     height: 91%; */
+}
+
+.no-notes-message {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #457b9d;
+    padding: 10px 20px;
+    margin-bottom: 200px;
 }
 
 .custom-scroll::-webkit-scrollbar {
@@ -32,8 +44,8 @@
     background-color: #9b9a9a;
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
     .MainContainer {
         width: calc(100% - 20px);
     }
-}
+} */

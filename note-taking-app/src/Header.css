@@ -37,3 +37,24 @@
     width: 1.5rem;
     cursor: pointer;
 }
+
+@media (min-width:700px) {
+    .header-add-btn {
+        position: absolute;
+        width: 1.7rem;
+        left: 150px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width:1000px) {
+    .header-add-btn {
+        left: 250px;
+    }
+}
+
+@media (min-width:1200px) {
+    .header-add-btn {
+        left: 350px;
+    }
+}

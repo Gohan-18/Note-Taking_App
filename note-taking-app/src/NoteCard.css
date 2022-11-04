@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    height: 400px;
+    max-height: 500px;
     max-width: 400px;
     margin: 20px;
     border-radius: 20px;
@@ -32,12 +32,12 @@
     outline: none;
     padding: 5px;
     text-align: center;
-
+    cursor: pointer;
 }
 
 .content {
-    flex: 1;
-    /* height: 250px; */
+    /* flex: 1; */
+    height: 250px;
     width: 100%;
     padding: 0 5px;
     overflow: auto;
@@ -50,6 +50,11 @@
     line-height: 1.3em;
     transition: all 0.2s;
     resize: none;
+    cursor: pointer;
+}
+
+.content:focus, #title:focus {
+    cursor: text;
 }
 
 .note-card-footer {
@@ -66,10 +71,17 @@
     margin-left: 10px;
 }
 
-.note-card-footer img {
-    height: 1.5em;
+.note-card-footer .delIcon {
+    height: 1.8em;
     margin-right: 10px;
     cursor: pointer;
+    padding: 7px;
+    border-radius: 50%;
+    transition: 500ms;
+}
+
+.delIcon:hover {
+    background-color: #c4c4c4;
 }
 
 .note-scroll-bar::-webkit-scrollbar {
@@ -89,3 +101,14 @@
 .note-scroll-bar::-webkit-scrollbar-thumb:hover {
     background-color: #9b9a9a;
   }
+
+/* @media (min-width: 1200px) {
+    .note-card:hover img{
+        opacity: 1;
+    }
+    
+    .delIcon {
+        opacity: 0;
+        transition: 500ms;
+    }
+} */
