@@ -6,6 +6,8 @@ import './App.css'
 
 function App() {
 
+  const [searchText, searchState] = useState('');
+
   const [notes, setNote] = useState(
     JSON.parse(localStorage.getItem("note-taking-app")) || []
   );
@@ -57,14 +59,20 @@ function App() {
     setNote(tempNote);
   }
 
+  const searchUpdate = (event) => {
+    searchState(event);
+  }
+
   return (
     <div className="App">
       <Header addNote={addNotes}/>
       <MainContainer 
-      notes = {notes} 
+      notes = {notes.filter((event) => 
+        event.title.toLowerCase().includes(searchText))}
       delNote = {delNote} 
       titleUpdate = {titleUpdate} 
-      contentUpdate = {contentUpdate} />
+      contentUpdate = {contentUpdate}
+      searchUpdate = {searchUpdate} />
     </div>
   )
 }

@@ -9,7 +9,6 @@ function NoteCard(props) {
   const debounce = (func) => {
     clearTimeout(timeOut);
     timeOut = setTimeout(func, timer);
-    console.log("debounce called");
   }
 
   const titleUpdate = (event, id) => {
@@ -18,8 +17,6 @@ function NoteCard(props) {
 
   const contentUpdate = (event, id) => {
     debounce(() => props.contentUpdate(event,id));
-    console.log(event);
-    console.log(id);
   }
 
   const dateTime = (value) => {

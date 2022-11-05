@@ -1,6 +1,8 @@
 import React from 'react'
 import NoteCard from "./NoteCard"
+import SearchBar from "./SearchBar.jsx"
 import './MainContainer.css'
+
 
 function MainContainer(props) {
 
@@ -18,6 +20,7 @@ function MainContainer(props) {
 
   return (
     <>
+      <SearchBar searchUpdate = {props.searchUpdate} />
       <div className='MainContainer custom-scroll'>
         {/* <NoteCard key={props.notes.id} note = {props.notes} /> */}
         {notes?.length > 0 ? (notes.map((item) => (
