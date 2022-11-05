@@ -25,7 +25,7 @@
     color: #457b9d;
     padding: 10px 20px;
     margin-bottom: 200px;
-    margin-top: 200px;
+    /* margin-top: 200px; */
 }
 
 .custom-scroll::-webkit-scrollbar {
